@@ -1,22 +1,19 @@
-Chat-Dheiver-T
-Este é um chatbot simples que utiliza o modelo BERT em português "neuralmind/bert-base-portuguese-cased" para responder perguntas em português. A interface do chatbot é construída com o Streamlit.
+README - chat-dheiver-t
+Este é um código de exemplo de como utilizar a API do GPT-3 da OpenAI para criar uma interface de chat.
 
-Pré-requisitos
-Antes de executar o código, você precisa ter o Python 3 instalado em sua máquina. Além disso, é necessário instalar as seguintes bibliotecas Python:
+Requisitos
+API Token da OpenAI
+Biblioteca requests
+Biblioteca streamlit
+Instruções de uso
+Insira sua API Token da OpenAI na variável API_TOKEN.
+Execute o arquivo app.py com o comando streamlit run app.py.
+Digite sua pergunta no campo de texto e clique no botão "Gerar texto".
+A resposta gerada pelo modelo será exibida abaixo.
+Como funciona
+O código envia uma requisição POST para a API do GPT-3 da OpenAI, passando como parâmetro o texto de entrada e a quantidade de palavras desejadas na resposta. A resposta é então processada e exibida na tela.
 
-streamlit
-requests
-Você pode instalá-las usando o pip:
-pip install streamlit requests
+A interface é construída com o streamlit, que permite criar aplicações web interativas com facilidade.
 
-Como executar o código
-Para executar o chatbot, abra um terminal ou prompt de comando e execute o seguinte comando:
-streamlit run chatbot.py
-
-Isso abrirá o chatbot em seu navegador padrão. Basta digitar uma pergunta em português e clicar no botão "Gerar resposta" para receber uma resposta do modelo BERT.
-
-Personalização
-Você pode personalizar o chatbot modificando o valor da variável API_URL para utilizar outro modelo de linguagem suportado pelo Hugging Face. Além disso, você pode modificar o valor da variável API_TOKEN se estiver utilizando um modelo que requer autenticação.
-
-Agradecimentos
-Este código foi desenvolvido com base nos exemplos fornecidos pela equipe do Hugging Face e pelo Streamlit. Agradecemos a ambos pela disponibilização dessas ferramentas incríveis para a comunidade de desenvolvedores de inteligência artificial e ciência de dados.
+Contribuições
+Contribuições são sempre bem-vindas! Se você tiver alguma sugestão ou encontrar algum bug, por favor abra uma issue ou faça um pull request.
