@@ -1,19 +1,21 @@
-README - chat-dheiver-t
-Este é um código de exemplo de como utilizar a API do GPT-3 da OpenAI para criar uma interface de chat.
+Chat-Dheiver-T
+Este é um modelo de conversa baseado no modelo de linguagem OpenAI GPT-neo com 2,7 bilhões de parâmetros, treinado pela EleutherAI.
 
-Requisitos
-API Token da OpenAI
-Biblioteca requests
-Biblioteca streamlit
-Instruções de uso
-Insira sua API Token da OpenAI na variável API_TOKEN.
-Execute o arquivo app.py com o comando streamlit run app.py.
-Digite sua pergunta no campo de texto e clique no botão "Gerar texto".
-A resposta gerada pelo modelo será exibida abaixo.
-Como funciona
-O código envia uma requisição POST para a API do GPT-3 da OpenAI, passando como parâmetro o texto de entrada e a quantidade de palavras desejadas na resposta. A resposta é então processada e exibida na tela.
+Como usar
+Clone este repositório para sua máquina local.
+Instale as dependências necessárias usando o pip:
+Copy code
+pip install streamlit requests
+Execute o arquivo app.py usando o seguinte comando no terminal:
+Copy code
+streamlit run app.py
+Abra o endereço http://localhost:8501 em seu navegador web para ver a interface do aplicativo.
+API Hugging Face
+Este modelo de conversa usa a API da Hugging Face para responder às perguntas. Para usar a API, você precisa de uma chave de API.
 
-A interface é construída com o streamlit, que permite criar aplicações web interativas com facilidade.
+Você pode obter uma chave de API gratuita da Hugging Face acessando o seguinte link: https://huggingface.co/models
+
+Depois de obter sua chave de API, adicione-a ao arquivo app.py na variável API_TOKEN.
 
 Contribuições
-Contribuições são sempre bem-vindas! Se você tiver alguma sugestão ou encontrar algum bug, por favor abra uma issue ou faça um pull request.
+Se você encontrar algum erro ou quiser contribuir com o desenvolvimento deste projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
