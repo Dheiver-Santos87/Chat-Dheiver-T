@@ -11,10 +11,6 @@ def query(payload):
 
 st.set_page_config(page_title="Chat-Dheiver-T", page_icon=":robot:", layout="wide")
 
-# Adicionar o logotipo do ChatGPT
-st.sidebar.header("ChatGPT")
-st.sidebar.image("https://i.imgur.com/4uOgDYK.png")
-
 # Adicionar um estilo CSS personalizado
 st.markdown("""
 <style>
